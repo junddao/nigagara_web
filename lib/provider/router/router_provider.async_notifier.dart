@@ -9,7 +9,7 @@ final GlobalKey<NavigatorState> shellNavigatorKey = GlobalKey<NavigatorState>(de
 
 class Routes {
   // 1 depth
-
+  static const root = '/';
   static const home = '/home';
 }
 
@@ -17,7 +17,7 @@ final routerProvider = Provider<GoRouter>((ref) {
   return GoRouter(
     navigatorKey: rootNavigatorKey,
     debugLogDiagnostics: true,
-    initialLocation: Routes.home,
+    initialLocation: Routes.root,
     routes: _routes,
     redirect: (context, state) async {
       return null;
@@ -27,12 +27,12 @@ final routerProvider = Provider<GoRouter>((ref) {
 
 final _routes = <RouteBase>[
   GoRoute(
-    path: Routes.home,
-    name: Routes.home,
+    path: Routes.root,
+    name: Routes.root,
     pageBuilder: (context, state) {
       return MaterialPage(
         key: state.pageKey,
-        child: const PageHome(),
+        child: const PageRoot(),
       );
     },
   ),
