@@ -19,40 +19,13 @@ class PageHomeTablet extends StatelessWidget {
           SingleChildScrollView(
             child: Container(
               margin: const EdgeInsets.symmetric(horizontal: 32),
-              child: Column(
+              child: const Column(
                 children: <Widget>[
-                  const MinimalMenuBar(),
-                  const ListItem(
-                      imageUrl: "assets/images/paper_flower_overhead_bw_w1080.jpg",
-                      title: tabletlistItemTitleText,
-                      description: tabletListItemPreviewText),
+                  ListItem(
+                      imageUrl: "assets/images/camping1.png",
+                      title: '니가가세요. 캠핑',
+                      description: '내가 못가는 캠핑장. 다른 좋은 분께 양도하세요.'),
                   divider,
-                  const ListItem(
-                      imageUrl: "assets/images/iphone_cactus_tea_overhead_bw_w1080.jpg",
-                      title: tabletlistItemTitleText,
-                      description: tabletListItemPreviewText),
-                  divider,
-                  const ListItem(
-                      imageUrl: "assets/images/typewriter_overhead_bw_w1080.jpg",
-                      title: tabletlistItemTitleText,
-                      description: tabletListItemPreviewText),
-                  divider,
-                  const ListItem(
-                      imageUrl: "assets/images/coffee_paperclips_pencil_angled_bw_w1080.jpg",
-                      title: tabletlistItemTitleText,
-                      description: tabletListItemPreviewText),
-                  divider,
-                  const ListItem(
-                      imageUrl: "assets/images/joy_note_coffee_eyeglasses_overhead_bw_w1080.jpg",
-                      title: tabletlistItemTitleText,
-                      description: tabletListItemPreviewText),
-                  divider,
-                  Container(
-                    padding: const EdgeInsets.symmetric(vertical: 80),
-                    child: const ListNavigation(),
-                  ),
-                  divider,
-                  const Footer(),
                 ],
               ),
             ),

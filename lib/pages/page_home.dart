@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:minimal/responsive.dart';
 
 import '../lib.dart';
 

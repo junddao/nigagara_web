@@ -36,3 +36,20 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+  fonts:
+    - family: Noto_Serif_KR
+      fonts:
+        - asset: assets/font/Noto_Serif_KR/NotoSerifKR-ExtraLight.otf
+          weight: 200
+        - asset: assets/font/Noto_Serif_KR/NotoSerifKR-Light.otf
+          weight: 300
+        - asset: assets/font/Noto_Serif_KR/NotoSerifKR-Regular.otf
+          weight: 400
+        - asset: assets/font/Noto_Serif_KR/NotoSerifKR-Medium.otf
+          weight: 500
+        - asset: assets/font/Noto_Serif_KR/NotoSerifKR-SemiBold.otf
+          weight: 600
+        - asset: assets/font/Noto_Serif_KR/NotoSerifKR-Bold.otf
+          weight: 700
+        - asset: assets/font/Noto_Serif_KR/NotoSerifKR-Black.otf
+          weight: 900

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:minimal/provider/router/router_provider.async_notifier.dart';
+import 'package:minimal/size_config.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -13,6 +14,9 @@ class MyApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final router = ref.read(routerProvider);
     return MaterialApp.router(
+      theme: ThemeData(
+        fontFamily: 'Noto_Serif_KR',
+      ),
       routerConfig: router,
       // Wrapping the app with a builder method makes breakpoints
       // accessible throughout the widget tree.
@@ -27,6 +31,10 @@ class MyApp extends ConsumerWidget {
       // ),
 
       debugShowCheckedModeBanner: false,
+      builder: (context, child) {
+        SizeConfig().init(context);
+        return child!;
+      },
     );
   }
 }
